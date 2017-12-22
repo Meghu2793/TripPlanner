@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <ImageButton
+        android:id="@+id/imageButtonNearByplacesImg"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="28dp"
+        android:background="@null"
+        android:scaleType="fitCenter"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:drawable/checkbox_on_background" />
+
+    <TextView
+        android:id="@+id/textViewNearByplacesText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:layout_marginTop="28dp"
+        android:layout_marginLeft="10dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/imageButtonNearByplacesImg"
+        tools:layout_editor_absoluteX="96dp"
+        />
+
+    <ImageButton
+        android:id="@+id/imageButtonNearByplacesImg2"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="@null"
+        android:scaleType="fitCenter"
+        app:srcCompat="@drawable/delete_icon"
+        tools:layout_editor_absoluteX="77dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginLeft="10dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/textViewNearByplacesText"/>
+</android.support.constraint.ConstraintLayout>
